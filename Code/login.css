@@ -1,0 +1,71 @@
+body {
+    background-image: url("./Dashboard\ Login2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img[src="./bup.png"] {
+    width: 7%;
+}
+
+h1 {
+    text-align: center;
+    color: #3C3939;
+    margin: 50px auto 70px auto;
+}
+
+#logo-container {
+    text-align: center;
+    padding-top: 2%;
+}
+
+#form-container {
+    text-align: center;
+}
+
+form {
+    width: 30%;
+    margin: 0 auto;
+}
+
+input {
+    background-color: #E5E6F0;
+    border: 1px solid #7896B7;
+    border-radius: 5px;
+    width: 50%;
+    height: 32px;
+}
+
+input[type="password"] {
+    margin-top: 15px;
+}
+
+input[type="submit"] {
+    height: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    color: #2148C0;
+}
+
+input[type="submit"]:hover {
+    background-color: whitesmoke;
+    color: #1166FF;
+}
+
+#forgot {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:black;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 7px;
+}
