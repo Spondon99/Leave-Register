@@ -1,10 +1,10 @@
 body {
-    background-image: url("./Dashboard\ Login2.svg");
+    background-image: url("./images/Dashboard\ Login2.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-img[src="./bup.png"] {
+img[src="./images/bup.png"] {
     width: 7%;
 }
 
