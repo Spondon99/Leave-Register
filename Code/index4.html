@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style4.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="images/bup.png">
+                <h4>Leave Register</h4>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">My Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Leave Tracker</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-sharp fa-solid fa-file"></i>
+                        Apply
+                    </a>
+                  
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-sharp fa-solid fa-envelope"></i>
+                        Leave Requests
+                    </a>
+                </li>
+            </ul>
+
+            <div id="sidebar-footer">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sign out
+                </a>
+            </div>
+
+        
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-solid fa-bars"></i>
+                        
+                    </button>
+                 
+
+                  
+                </div>
+            </nav>
+
+            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+                sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+                recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+                minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
+                quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur 
+                fugiat, temporibus enim commodi iusto libero magni deleniti quod quam 
+                consequuntur! Commodi minima excepturi repudiandae velit hic maxime
+                doloremque. Quaerat provident commodi consectetur veniam similique ad 
+                earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo 
+                fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore 
+                suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+                modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
+                totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
+                quasi aliquam eligendi, placeat qui corporis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+                sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+                recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+                minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
+                quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur 
+                fugiat, temporibus enim commodi iusto libero magni deleniti quod quam 
+                consequuntur! Commodi minima excepturi repudiandae velit hic maxime
+                doloremque. Quaerat provident commodi consectetur veniam similique ad 
+                earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo 
+                fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore 
+                suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+                modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
+                totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
+                quasi aliquam eligendi, placeat qui corporis!</p>
+
+                <div id="footer">
+                    <div class="item">About us</div>
+                    <div class="item">Privacy Policy</div>
+                    <div class="item">Help</div>
+                </div>
+            
+            
+    </div>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
