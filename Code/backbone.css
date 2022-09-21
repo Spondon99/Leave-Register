@@ -351,3 +351,55 @@ ul.CTAs a {
         display: none;
     }
 }
+
+
+
+
+/* amader code sajid sadiq */
+
+.picc{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-image: url("baby.jpg");
+    border-radius: 50%;
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+}
+
+.bb{
+    text-align: center;
+    color: black;
+
+}
+
+
+
+.perin{
+    background-color: white;
+    border : 1px solid white;
+    margin-top: 20px   ;
+    margin-bottom: 20px ;
+    margin-left: 40px ;
+    margin-right:40px ;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.conin{
+    background-color: white;
+    border : 1px solid white;
+    margin-top: 20px   ;
+    margin-bottom: 20px ;
+    margin-left: 40px ;
+    margin-right:40px ;
+    padding: 25px;
+    border-radius: 30px;
+
+}
+
+.des{
+    color: black;
+}
+
