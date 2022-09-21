@@ -1,0 +1,55 @@
+
+input[value="Apply"] {
+    margin: 30px 8% 0 40%;
+    background-color: #00b300;
+    color: white;
+}
+
+input[value="Discard"] {
+    background-color: red;
+    color: white;
+}
+
+input[value="Apply"]:hover {
+    background-color: lightgreen;
+}
+
+input[value="Discard"]:hover {
+    background-color: lightcoral;
+}
+
+form div, input, textarea, select {
+    border-radius: 10px;
+}
+
+input, select {
+    border: none;
+}
+
+input[type="date"], select {
+    height: 40px;
+}
+
+input[type="date"] {
+    text-align: center;
+}
+
+select {
+    margin-bottom: 25px;
+    width: 200px;
+}
+
+input[type="submit"] {
+    width: 90px;
+    height: 50px;
+}
+
+@media (max-width: 450px) {
+    input[value="Apply"] {
+        margin-left: 70px;
+    }
+
+    input[name="incharge"] {
+        width: 100%;
+    }
+}
