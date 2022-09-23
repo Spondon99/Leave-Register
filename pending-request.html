@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="backbone.css">
+    <link rel="stylesheet" href="lr.css">
+    <link rel="stylesheet" href="pending-request.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="images/bup.png">
+                <h4>Leave Register</h4>
+            </div>
+
+            <div id="sidebar-stick">
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-home"></i>
+                            Dashboard
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#" class="drop">My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#" class="drop">Leave Tracker</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-sharp fa-solid fa-file"></i>
+                            Apply
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-sharp fa-solid fa-envelope"></i>
+                            Leave Requests
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="sidebar-footer">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sign out
+                </a>
+            </div>
+
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-solid fa-bars"></i>
+                    </button>
+                    <div class="top-right">
+                        <div id="mail"><i class="fas fa-sharp fa-solid fa-envelope"></i></div>
+                        <div style="width: 5px;"></div>
+                        <div id="profile"><i class="fas fa-user-alt"></i></div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- requests -->
+
+            <h3 style="margin-left: 32px;">Pending Requests</h3>
+            <div class="row">
+                <div class="col-sm-9" style="margin-top: 30px;">
+                    <div class="card" style="margin-left: 30px;">
+                        <div class="card-body">
+                            <div style="display:flex;">
+                                <div>
+                                    <h6>User-1 | Lecturer</h6>
+                                </div>
+                                <div id="pic"><i class="fas fa-user-alt"></i></div>
+                            </div>
+                            <hr>
+                            <div style="margin: 25px 15px auto auto; text-align: justify;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                                numquam blanditiis harum quisquam eius sed odit fugi
+                            </div>
+                            <div style="margin: 25px 15px auto auto;">
+                                <p>Casual Leave: 09/09/22 to 11/09/22</p>
+                            </div>
+                            <div style="margin-top: 25px; display:flex; flex-wrap: wrap;">
+                                <div id="incharge">In charge: User2</div>
+                                <div id="buttons">
+                                    <button>Approve</button>
+                                    <button>Deny</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-9" style="margin-top: 30px;">
+                    <div class="card" style="margin-left: 30px;">
+                        <div class="card-body">
+                            <div style="display:flex;">
+                                <div>
+                                    <h6>User-1 | Lecturer</h6>
+                                </div>
+                                <div id="pic"><i class="fas fa-user-alt"></i></div>
+                            </div>
+                            <hr>
+                            <div style="margin: 25px 15px auto auto; text-align: justify;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                                numquam blanditiis harum quisquam eius sed odit fugi
+                            </div>
+                            <div style="margin: 25px 15px auto auto;">
+                                <p>Casual Leave: 09/09/22 to 11/09/22</p>
+                            </div>
+                            <div style="margin-top: 25px; display:flex; flex-wrap: wrap;">
+                                <div id="incharge">In charge: User2</div>
+                                <div id="buttons">
+                                    <button>Approve</button>
+                                    <button>Deny</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+
+
+            <div id="footer">
+                <div class="item">About us</div>
+                <div class="item">Privacy Policy</div>
+                <div class="item">Help</div>
+            </div>
+
+
+        </div>
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+
+        // function iconF() {
+        //     let i = document.querySelectorAll("nav > div > ul > li > a");
+        //     i.forEach(
+        //         value => {
+        //            console.log(value.innerHTML);
+        //         }
+        //     )
+        // }
+
+        </script>
+</body>
+
+</html>
