@@ -1,27 +1,62 @@
 /* CODE OF SADIQ & SAJID */
 
 
+
 #pic {
     background-color: #aaa;
     height: 40px;
     width: 40px;
-    border-radius: 35px;
+    border-radius: 35px; 
     padding: 10px;
     padding-top: 8px;
     text-align: center;
     margin: -10px 15px auto auto;
 }
 
-#buttons {
+.req-body {
+    margin-left: 30px; 
+    border-radius: 12px;
+}
+
+.req-body:last-child {
+    margin-bottom: 30px;
+}
+
+.buttons {
     margin: 0 15px 0 auto;
 }
 
+.buttons button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    height: 32px;
+}
+
+.buttons button:nth-child(1) {
+    margin-right: 20px;
+    background-color: #00b300;
+}
+
+.buttons button:nth-child(2) {
+    background-color: red;
+}
+
+.buttons button:nth-child(1):hover {
+    background-color: lightgreen;
+}
+
+.buttons button:nth-child(2):hover {
+    background-color: lightcoral;
+}
+
 @media (max-width: 450px) {
-    #incharge {
+    .incharge {
         margin-right: 100px;
     }
 
-    #buttons {
+    .buttons {
         margin-left: 0;
         margin-top: 20px;
     }
