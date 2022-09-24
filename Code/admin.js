@@ -1,3 +1,20 @@
+
+// On leave color change
+document.addEventListener('DOMContentLoaded', () => {
+  let status = document.querySelectorAll('.user-content p');
+
+  status.forEach(item => {
+    if(item.innerHTML == 'On leave') {
+      item.style.color = 'red';
+    } else if(item.innerHTML == 'On duty') {
+      item.style.color = 'green';
+    } else {
+      
+    }
+  })
+});
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 

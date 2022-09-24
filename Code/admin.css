@@ -31,6 +31,10 @@ h3, h5, p {
 
 }
 
+.user-content p:nth-child(2) {
+  font-weight: 600;
+}
+
 
 /* The Modal (background) */
 .modal {
