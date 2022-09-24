@@ -1,3 +1,3 @@
 # Leave-Register 
 
-Project for SRE lab
+An automated Leave Register management system for employees at BUP.
