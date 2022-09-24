@@ -1,0 +1,87 @@
+
+.user-pic {
+    background-color: #aaa;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px; 
+    padding: 13px;
+    padding-top: 12px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+h3, h5, p {
+    text-align: center;
+}
+
+.user-div {
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.user-div:hover {
+    border: 2px solid lightblue;
+    margin-bottom: 28px;
+}
+
+.user-content {
+    margin: 0 -20px -20px -20px;
+
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+  }
+
+  .modal-content p {
+    text-align: left;
+  }
+
+  .modal-content button {
+    margin: 0 auto;
+    width: 70px;
+    height: 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00b300;
+    color: white;
+    font-weight: 500;
+  }
+
+  .modal-content button:hover {
+    background-color: lightgreen;
+  }
+
+  @media (max-width: 783px) {
+    .modal-content {
+        width: 250px;
+    }
+  }
+
+  @media (max-width: 530px) {
+    .modal-content {
+        margin-top: 130px;
+    }
+  }

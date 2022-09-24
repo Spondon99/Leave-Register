@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Leave Apply</title>
+    <title>Collapsible sidebar using Bootstrap 4</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="backbone.css">
-    <link rel="stylesheet" href="./apply.css">
+    <link rel="stylesheet" href="./admin.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -32,37 +32,24 @@
 
             <div id="sidebar-stick">
                 <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-home"></i>
-                            Dashboard
-                        </a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li>
-                                <a href="./index.html" class="drop">My Profile</a>
-                            </li>
-                            <li>
-                                <a href="./leaveTracker.html" class="drop">Leave Tracker</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="#">
-                            <i class="fas fa-sharp fa-solid fa-file"></i>
-                            Apply
+                            <i class="fas fa-users"></i>
+                            Users
                         </a>
                     
                     </li>
                     <li>
-                        <a href="./lr.html">
-                            <i class="fas fa-sharp fa-solid fa-envelope"></i>
-                            Leave Requests
+                        <a href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                            Academic Calendar
                         </a>
+                    
                     </li>
                 </ul>
             </div>
             <div id="sidebar-footer">
-                <a href="./login.html">
+                <a href="#">
                     <i class="fas fa-sign-out-alt"></i>
                     Sign out
                 </a>
@@ -90,61 +77,63 @@
             </nav>
 
 
-            <h3 style="text-align:center;">Apply for Leave</h3>
-            <form action="" onsubmit="submitted(event)">
-            <div>
-                <div class="row" style="margin-top: 60px; padding: 0 70px;">
-                    <div class="col-sm-6" style="margin-bottom: 20px;">
-                        <h6>Type of leave</h6>
-                        <select name="leaveType" required>
-                            <option value="" selected disabled hidden>Select one</option>
-                            <option value="casual">Casual</option>
-                            <option value="earned">Earned</option>
-                            <option value="entertainment">Entertainment</option>
-                        </select>
-                        
-                        <p>Leaves taken: </p>
-                        <p>Remaining: </p>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <h6>Write an application (optional)</h6>
-                        <div style="background-color:white;">
-                            <input type="text" name="subject" placeholder=" Subject" style="border: none; width: 100%;">
-                            <hr>
-                            <textarea name="text" placeholder=" Text" style="border: none; width: 100%; height: 150px"></textarea>
+            <!-- Admin -->
+            <h3>All users</h3>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-sm-4">
+                    <div class="card user-div" onclick="showDetails()">
+                        <div class="card-body user-content">
+                            <div class="user-pic"><i class="fas fa-user-alt"></i></div>
+                            <h5>User 1</h5>
+                            <p>Lecturer</p>
+                            <p>On leave</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="row" style="margin-top: 40px; padding: 0 70px;">
-                    <div class="col-sm-6" style="margin-top: 2px;margin-bottom: 50px;">
-                        <h6>Duration of leave</h6>
-                        <table>    
-                            <tr>
-                                <td style="padding-top: 10px; padding-right: 10px;"><label>From</label></td>
-                                <td><input type="date" name="startDate" required></td>
-                            </tr>
-                            <tr>
-                                <td style="padding-top: 10px; padding-right: 10px;"><label>To</label</td>
-                                <td><input type="date" name="endDate" required></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6>In charge (optional)</h6>
-                        <input type="text" name="incharge" placeholder=" Name" style="border: none; width: 85%; height: 50px">
+                <div class="col-sm-4">
+                    <div class="card user-div">
+                        <div class="card-body user-content">
+                            <div class="user-pic"><i class="fas fa-user-alt"></i></div>
+                            <h5>User 1</h5>
+                            <p>Lecturer</p>
+                            <p>On leave</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row" style="padding: 5% auto 0 auto; margin-bottom: 20px;">
-                    <div class="col-sm-12">
-                        <input id="myBtn" type="submit" value="Apply">
-                        <button id="discard" onclick="reset()">Discard</button>
+                <div class="col-sm-4">
+                    <div class="card user-div">
+                        <div class="card-body user-content">
+                            <div class="user-pic"><i class="fas fa-user-alt"></i></div>
+                            <h5>User 1</h5>
+                            <p>Lecturer</p>
+                            <p>On leave</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            </form>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card user-div">
+                        <div class="card-body user-content">
+                            <div class="user-pic"><i class="fas fa-user-alt"></i></div>
+                            <h5>User 1</h5>
+                            <p>Lecturer</p>
+                            <p>On leave</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card user-div">
+                        <div class="card-body user-content">
+                            <div class="user-pic"><i class="fas fa-user-alt"></i></div>
+                            <h5>User 1</h5>
+                            <p>Lecturer</p>
+                            <p>On leave</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Modal -->
             <div id="myModal" class="modal">
@@ -152,15 +141,19 @@
                 <!-- Modal content -->
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <p>Send your application?</p>
-                  <div style="display: flex;">
-                    <button id="ok" onclick="okF()">Ok</button>
-                    <button id="cancel" onclick="cancelF()">Cancel</button>
-                  </div>
+                  <h5>User 1</h5>
+                  <p style="text-align:center;">Lecturer</p>
+                  <p>Status: On leave</p>
+                  <p>Room no: 111</p>
+                  <p>E-mail: someone@gmail.com</p>
+                  <p>Phone: 0123456</p>
+                  <button onclick="closeModal()">OK</button>
                 </div>
               
               </div>
             <!-- End of modal-->
+
+            <!-- -->
 
                 <div id="footer">
                     <div class="item">About us</div>
@@ -179,7 +172,7 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <script src="./apply.js"></script>
+    <script src="./admin.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -187,6 +180,7 @@
                 $('#sidebar').toggleClass('active');
             });
         });
+
     </script>
 </body>
 

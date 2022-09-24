@@ -1,11 +1,15 @@
 
+tr {
+    height: 50px;
+}
+
 input[value="Apply"] {
     margin: 30px 8% 0 40%;
     background-color: #00b300;
     color: white;
 }
 
-input[value="Discard"] {
+#discard {
     background-color: red;
     color: white;
 }
@@ -14,15 +18,15 @@ input[value="Apply"]:hover {
     background-color: lightgreen;
 }
 
-input[value="Discard"]:hover {
+#discard:hover {
     background-color: lightcoral;
 }
 
-form div, input, textarea, select {
+form div, input, textarea, select, #discard {
     border-radius: 10px;
 }
 
-input, select {
+input, select, #discard {
     border: none;
 }
 
@@ -39,10 +43,72 @@ select {
     width: 200px;
 }
 
-input[type="submit"] {
+input[type="submit"], #discard {
     width: 90px;
     height: 50px;
+    font-weight: 500;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 25% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-content p {
+    text-align: center;
+  }
+
+  #ok, #cancel {
+    width: 70px;
+    padding: 10px auto;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    height: 32px;
+  }
+
+  #ok {
+    margin: 10px 15px 10px auto;
+    background-color: #00b300;
+  }
+
+  #cancel {
+    margin: 10px auto 10px 15px;
+    background-color: red; 
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 
 @media (max-width: 450px) {
     input[value="Apply"] {
@@ -51,5 +117,9 @@ input[type="submit"] {
 
     input[name="incharge"] {
         width: 100%;
+    }
+
+    .modal-content {
+        margin-top: 70%;
     }
 }
