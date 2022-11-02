@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="710" fill="none" viewBox="0 0 1280 710">
+  <g clip-path="url(#a)">
+    <path fill="#E5E6F0" d="M0 0h1280v710H0z"/>
+    <ellipse cx="13" cy="714.334" fill="#7896B7" rx="362" ry="361.666"/>
+    <ellipse cx="13" cy="714.334" fill="#738EAC" rx="286" ry="285.736"/>
+    <ellipse cx="13" cy="714.334" fill="#67819D" rx="219" ry="218.798"/>
+    <path fill="#7896B7" d="M685.5 133.871C549.9 146.659 457.667 45.952 428.5-6l864 3.497v717.337H1196c-298.8-37.965-248.5-189.325-186-260.26 36.5-49.787 102.5-169.743 74.5-251.267-35-101.906-229.5-85.421-399-69.436Z"/>
+    <path fill="url(#b)" d="M583 22h104v111H583z"/>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h1280v710H0z"/>
+    </clipPath>
+    <pattern id="b" width="1" height="1" patternContentUnits="objectBoundingBox">
+      <use xlink:href="#c" transform="scale(.00356 .00333)"/>
+    </pattern>
+  </defs>
+</svg>
