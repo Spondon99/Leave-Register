@@ -1,0 +1,80 @@
+
+#back {
+    background-image: url("/img/Dashboard\ Login2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+
+img[src="/img/bup.png"] {
+    width: 7%;
+}
+
+input:focus {
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    color: #3C3939;
+    margin: 50px auto 90px auto;
+}
+
+#logo-container {
+    text-align: center;
+    padding-top: 2%;
+}
+
+#form-container {
+    text-align: center;
+}
+
+form {
+    width: 30%;
+    margin: 0 auto;
+}
+
+input {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 260px;
+    height: 40px;
+}
+
+input[type="password"] {
+    margin-top: 18px;
+}
+
+input[type="submit"] {
+    height: 28px;
+    width: 180px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    color: #2148C0;
+}
+
+input[type="submit"]:hover {
+    background-color: whitesmoke;
+    color: #1166FF;
+}
+
+#forgot {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:black;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 17px;
+}
